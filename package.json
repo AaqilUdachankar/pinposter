@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "PinPoster — AI-Powered Pinterest Affiliate Marketing SaaS",
   "scripts": {
+    "start": "cd server && npm start",
+    "build": "cd client && npm run build",
     "install:all": "npm install && cd server && npm install && cd ../client && npm install",
     "client": "cd client && npm run dev",
-    "server": "cd server && npm run dev",
-    "build": "cd client && npm run build"
+    "server": "cd server && npm run dev"
   },
   "keywords": ["pinterest", "affiliate", "marketing", "saas", "ai", "automation"],
   "author": "PinPoster Team",
