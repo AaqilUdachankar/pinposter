@@ -140,3 +140,6 @@ brain/
 scratch/
 .gemini/
 .antigravity/
+
+DEPLOYMENT_GUIDE.md
+README.md

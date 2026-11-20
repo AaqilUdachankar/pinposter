@@ -30,3 +30,6 @@ pnpm-debug.log*
 Thumbs.db
 .idea/
 .vscode/
+
+readme.md
+deployment_guide.md
