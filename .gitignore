@@ -1,0 +1,142 @@
+# =========================================================================
+# PinPoster - Root .gitignore
+# Complete gitignore for Fullstack React (Vite) + Express (Node.js) + MongoDB
+# =========================================================================
+
+# -------------------------------------------------------------------------
+# 1. Environment Variables & Security Secrets (NEVER COMMIT)
+# -------------------------------------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+server/.env
+server/.env.*
+client/.env
+client/.env.*
+!server/.env.example
+!client/.env.example
+
+# Private Keys, Certificates & Auth Tokens
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+id_rsa*
+secrets/
+credentials.json
+service-account*.json
+
+# -------------------------------------------------------------------------
+# 2. Dependencies & Package Managers
+# -------------------------------------------------------------------------
+node_modules/
+*/node_modules/
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp
+.pnp.js
+.pnpm-store/
+
+# -------------------------------------------------------------------------
+# 3. Production Builds & Bundler Caches
+# -------------------------------------------------------------------------
+dist/
+dist-ssr/
+build/
+client/dist/
+client/build/
+.cache/
+.parcel-cache/
+.vite/
+client/.vite/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# -------------------------------------------------------------------------
+# 4. User Uploads & Generated Media
+# Keep directory structure via .gitkeep, but exclude generated binary files
+# -------------------------------------------------------------------------
+server/uploads/*
+!server/uploads/.gitkeep
+uploads/*
+!uploads/.gitkeep
+temp/
+tmp/
+
+# -------------------------------------------------------------------------
+# 5. Logs & Runtime Diagnostic Files
+# -------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.pid
+*.seed
+*.pid.lock
+
+# -------------------------------------------------------------------------
+# 6. Test Outputs & Coverage Reports
+# -------------------------------------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+
+# -------------------------------------------------------------------------
+# 7. OS Metadata & Temporary Files
+# -------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+
+# -------------------------------------------------------------------------
+# 8. Editor & IDE Settings
+# -------------------------------------------------------------------------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -------------------------------------------------------------------------
+# 9. Workspace, Agent & Scratch Files
+# -------------------------------------------------------------------------
+.system_generated/
+brain/
+scratch/
+.gemini/
+.antigravity/
